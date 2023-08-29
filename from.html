@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="form.js"></script>
+  <title>Document</title>
+</head>
+<body>
+  <form action="https://www.instagram.com/coding_mastroo/">
+<div class="text-center m-10">
+  <button class="btn btn-primary m-5" data-toggle="modal" data-target="#login">LOGIN</button>
+</div>
+<div class="modal fade" id="login">
+<div class="modal-dialog">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h3 class="w-100 text-center">LOGIN FORM</h3>
+      <button class="btn btn-secondary" data-dismiss="modal">X</button>
+    </div>
+    <div class="modal-body" id="form">
+      <div class="form-group">
+        <label class="form-label">Email / UserName</label>
+        <input type="text" id="uname" placeholder="enter email or name" minlength="5"  required class="form-control">
+      </div>
+      <div class="form-group">
+        <label class="form-label">Password</label>
+        <input type="password" id="pws" placeholder="enter password" minlength="5" required class="form-control">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button type="reset" id="reset" class="btn btn-danger">Reset</button>
+      <button type="submit" onclick="welcome()" class="btn btn-success">Submit</button>
+    </div>
+  </div>
+</div>
+</div>
+</form>
+</body>
+</html>
